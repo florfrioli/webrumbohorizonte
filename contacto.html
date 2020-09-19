@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/ic_tambor.png"type="image/x-icon">
+    <link rel="stylesheet" href="css/rumboStyles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Staatliches&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/577ebe0b70.js" crossorigin="anonymous"></script>
+    <title>Rumbo Horizonte | Contacto </title>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <img src="img/logohead.png" alt="logo header" class="logo_encabezado">
+    </div>
+
+  <div class="navbar">
+    <a href="index.html">Inicio </a> 
+    <a href="talleres.html#titulo_talleres">Talleres </a>
+    <a href="nosotros.html">Nosotros </a>
+    <a href="eventos.html">Eventos anteriores</a>
+    <a href="nosotros.html#ubicacion"> Ubicación</a> 
+    <a href="contacto.html">Contacto </a>   
+</div>
+    <div>
+       
+        <form action="show_data.php" target="_blank">
+            <h3>Comunicate con nosotros!</h3>
+        <label for="firstname">Nombre: </label>
+        <input type="text" name="firstname" id="nombre" placeholder="Ingrese su nombre..." required> <br><br>
+        <label for="lastname">Apellido: </label>
+        <input type="text" name="lastname" id="apellido" placeholder="Ingrese su apellido..."> <br><br>
+        <label for="city" >Ciudad: </label>
+        <input type="text" name="city" id="ciudad" value="CABA"> <br><br>
+        <label for="email" >Mail: </label>
+        <input type="email" name="email" id="email" placeholder="nombre@mail.com" required> <br><br>
+        <label for="tel" >Teléfono: </label>
+        <input type="tel" name="tel" id="tel" title="01122334455" required><br><br>
+        <label for="motivo">Motivo de contacto:</label><br>
+        <input type="radio" name="motivo" value="consulta por talleres"> <label> Consulta por talleres </label><br>
+        <input type="radio" name="motivo" value="consulta por clases"> <label> Consulta por clases particulares </label><br>
+        <input type="radio" name="motivo" value="consulta por eventos"> <label> Consulta por eventos y contrataciones </label>
+        <br><br>
+        <label for="llegada">¿Cómo nos conociste?</label><br>
+        <input type="checkbox" name="llegada" value="integrante"><label> por un integrante de la escuela </label><br>
+        <input type="checkbox" name="llegada" value="redes"><label> por redes sociales </label><br>
+        <input type="checkbox" name="llegada" value="vivo"><label> por alguna presentación en vivo </label><br>
+        <input type="checkbox" name="llegada" value="recomendaciones"><label> por recomendaciones </label><br><br>
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea name="mensaje" id="mensaje" required placeholder="Escriba su consulta o mensaje..." style="height:200px"></textarea> <br>
+        <input type="submit" value="enviar">
+    </form>
+    </div> 
+
+
+</body>
+</html>
