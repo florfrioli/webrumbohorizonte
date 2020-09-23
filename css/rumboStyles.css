@@ -243,6 +243,7 @@ table{
   padding: 10px;
   border-collapse: collapse;
   overflow-x: auto;
+  width: 100%;
 }
 td,tr,th{
   border-width: 2px;
@@ -251,9 +252,11 @@ td,tr,th{
   padding: 10px;
   text-align: center;
   vertical-align: middle;
-  width: 15%;  
+  min-width: 15%;  
   margin: 0;
 }
+
+
 th{
   color: white;
   background-color: #551955;
@@ -267,6 +270,7 @@ th{
   font-size: 18px;
   font-weight: bold;
   border-color:black;
+  width: auto;
 }
 
 
