@@ -216,7 +216,6 @@ body {
 }
 
 
-
 /*------------------ Talleres*/
 /* Column container */
 .row_talleres {
@@ -227,22 +226,58 @@ body {
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
 .side_talleres {
-  flex: 30%;
-  background-color: #f1f1f1;
+  flex: 25%;
+  background-color: white;
   padding: 20px;
+  font-family: 'Hind';
+  font-weight: bold;
+  text-align: center;
 }
+
+.side_talleres h1, h2{
+  font-family: 'Staatliches';
+  color:  #551955;
+  font-weight: bold;
+}
+.side_talleres h2{
+  padding-top: 5%;
+}
+
 
 /* Main column */
 .main_talleres {
-  flex: 70%;
+  flex: 75%;
   background-color: white;
   padding: 20px;
 }
 
-/* Fake image, just for this example */
-.fakeimg {
+.titulo_talleres{
+  background-color: #FE8335;
+  text-align: center;
+  font-family: 'Staatliches';
+  color:  #551955;
+  margin-left: 0;
+  padding: 10px 0px;
+  font-size: 2rem;
+}
+
+.nivel_talleres h2{
+  font-family: 'Ribeye';
+  font-weight: bold;
+  margin:0;
+  padding-left: 4%;
+  text-decoration: underline;
+  color: #551955;
+}
+
+.nivel_talleres li {
+  font-family: 'Hind';
+  font-weight: bold;
+}
+
+.sideimg {
   width: 100%;
-  padding: 20px;
+  padding: 5px 10px;
 }
 
 /* TABLAS*/
@@ -259,7 +294,8 @@ td,tr,th{
   border-width: 2px;
   border-color: black;
   border-style: solid;
-  padding: 10px;
+  padding: 10px 5px;
+  font-family: 'Hind';
   text-align: center;
   vertical-align: middle;
   min-width: 15%;  
@@ -270,7 +306,9 @@ td,tr,th{
 th{
   color: white;
   background-color: #551955;
-  font-size: 18px;
+  font-size: 1.2rem;
+  font-family: 'Hind';
+  text-transform: uppercase;
   font-weight: bold;
   border-color:black;
 }
@@ -279,19 +317,10 @@ th{
   color: white;
   font-size: 18px;
   font-weight: bold;
+  font-family: 'Hind';
+  text-transform: uppercase;
   border-color:black;
   width: auto;
-}
-
-
-
-
-
-/* Footer */
-.footer_talleres {
-  padding: 20px;
-  text-align: center;
-  background: #ddd;
 }
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
