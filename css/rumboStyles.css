@@ -435,11 +435,20 @@ input[type=submit]:hover {
 }
 
 .titulo_evento{
-  margin: 1%;
+  margin: 6px;
+  padding: 10px 0px;
+  font-family: 'Staatliches';
+  color:  #551955;
+  background-color: #FE8335;
+  text-align: center;
 }
 
 .titulo_evento + p{
   margin: 1%;
+  font-family: 'Hind';
+  color:  black;
+  font-weight: bold;
+
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
