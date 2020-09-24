@@ -1,38 +1,39 @@
-
+/* -------------- GENERALES ---------------*/
  * {
-  /* La propiedad border-box recalcula el ancho de una caja para que el width sea la estrictamente la suma de border + padding + ancho o altura que sea necesario para que se cumpla. 
-  BORDER-BOX NO INCLUYE LOS MÁRGENES! */
   box-sizing: border-box;
 }
 
-/* Style the body */
 body {
   font-family: 'Hind', Arial;
   margin: 0;
 }
 
-/* Header/logo Title */
+p{
+  margin: 1%;
+  font-family: 'Hind';
+  color:  black;
+  font-weight: bold;
+}
+
 .header {
   padding: 10px;
   text-align: center;
   background: white;
-  border: 2px solid #551955;
-  
+  border: 2px solid #551955;  
 }
+
 .logo_encabezado{
   width: 60%;
-
 }
 
-
-/* Style the top navigation bar */
+/* Nav bar */
 .navbar {
   display: flex;
   background-color: #FE8335;
 }
 
-/* Style the navigation bar links */
-.navbar a {
+/* enlaces */
+.navbar a , .footer a {
   color:#551955;
   padding: 14px 20px;
   text-decoration: none;
@@ -41,47 +42,15 @@ body {
   font-size: 1.5em;
 }
 
-/* Change color on hover */
-.navbar a:hover {
+.navbar a:hover, .footer a:hover {
   background-color: #551955;
   color: #FE8335;
 }
 
-.navbar a:active {
+.navbar a:active, .footer a:focus {
   background-color: red;
   color: #FE8335;
 }
-
-
-/* Column container */
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
-.side {
-  flex: 30%;
-  background-color: #f1f1f1;
-  padding: 20px;
-}
-
-/* mainnovedad column */
-.main_novedades {
-  flex: 70%;
-  background-color: white;
-  padding: 20px;
-  max-width: 100%;
-  font-weight: bold;
-}
-
-.content_novedad h3{
-  color:#551955;
-  font-family: 'Ribeye';
-}
-
 
 /* Footer */
 .footer {
@@ -90,118 +59,14 @@ body {
   font-family: 'Ribeye';
   background: #FE8335;
 }
-.footer a{
-  font-size: 2rem;
-  padding: 0;
-}
 
-.row {
-  margin: 8px -16px;
-}
-
-/* Add padding BETWEEN each column */
-.row,
-.row > .column {
-  padding: 8px;
-}
-
-/* Create four equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 25%;
-}
-
-/* Clear floats after rows */ 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Content */
-.content_novedad {
-  background-color: white;
-  padding: 10px;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
-  .column {
-    width: 50%;
-  }
-  .navbar {
-    flex-direction: column;
-    padding: 1%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
-
-
-/* -----------------------Pag Profes */
-
-.column_profe {
-  float: left;
-  width: 30%;
-  margin-bottom: 16px;
-  padding: 0 8px;
-}
-
-@media screen and (max-width: 650px) {
-  .column_profe {
-    width: 100%;
-    display: block;
-  }
-}
-
-.column_escuela {
-  float: left;
-  width: 50%;
-  margin-bottom: 16px;
-  padding: 0 8px;
-}
-
-@media screen and (max-width: 650px) {
-  .column_escuela {
-    width: 100%;
-    display: block;
-  }
-}
-
-
-
-.card_profe {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.container_profe {
-  padding: 0 16px;
-}
-
-.container_profe::after, .row_profe::after, .row_escuela::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.title {
-  color: #551955;
-  font-family: 'Hind';
-  font-weight: bold;
-}
-
+/* botones */
 .button{
   border: none;
   outline: 0;
   display: inline-block;
   padding: 8px;
   color: white;
-  font-family: 'Hind';
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1rem;
@@ -215,63 +80,54 @@ body {
   background-color:#FE8335;
 }
 
-.pag_nosotros{
-  margin: 1%;
-}
-/* es igual a titulo talleres*/
-.pag_nosotros h1{
-  background-color: #FE8335;
-  text-align: center;
-  font-family: 'Staatliches';
-  color:  #551955;
-  margin-left: 0;
-  padding: 10px 0px;
-  font-size: 2rem;
+/*--------------- INDEX -----------------------*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 8px -16px;
 }
 
-#parrafo_nosotros{
-  text-align: justify;
-  font-family: 'Hind', cursive;
-  color:  black;
-  margin-left: 0;
-  padding: 10px 0px;
-  font-size: 1.2rem;
+.main_novedades {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+  max-width: 100%;
+  font-weight: bold;
 }
 
-
-.container_iframe {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+.content_novedad h3{
+  color:#551955;
+  font-family: 'Ribeye';
 }
 
-/* Then style the iframe to fit in the container div with full height and width */
-.ubicacion_mapa {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
+.column {
+  float: left;
+  width: 25%;
+  padding: 8px;
 }
 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
-/*------------------ Talleres*/
-/* Column container */
+.content_novedad {
+  background-color: white;
+  padding: 10px;
+}
+
+/*------------------ TALLERES ----------------------------------*/
 .row_talleres {
   display: flex;
   flex-wrap: wrap;
 }
 
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
 .side_talleres {
   flex: 25%;
   background-color: white;
   padding: 20px;
-  font-family: 'Hind';
   font-weight: bold;
   text-align: center;
 }
@@ -285,15 +141,19 @@ body {
   padding-top: 5%;
 }
 
+.sideimg {
+  width: 100%;
+  padding: 5px 10px;
+  border-radius: 50px;
+}
 
-/* Main column */
 .main_talleres {
   flex: 75%;
   background-color: white;
   padding: 20px;
 }
 
-.titulo_talleres{
+.titulo_naranja{
   background-color: #FE8335;
   text-align: center;
   font-family: 'Staatliches';
@@ -313,14 +173,7 @@ body {
 }
 
 .nivel_talleres li {
-  font-family: 'Hind';
   font-weight: bold;
-}
-
-.sideimg {
-  width: 100%;
-  padding: 5px 10px;
-  border-radius: 50px;
 }
 
 /* TABLAS*/
@@ -338,45 +191,115 @@ td,tr,th{
   border-color: black;
   border-style: solid;
   padding: 10px 5px;
-  font-family: 'Hind';
   text-align: center;
   vertical-align: middle;
   min-width: 15%;  
   margin: 0;
 }
-
-
-th{
+th, .dia{
   color: white;
   background-color: #551955;
   font-size: 1.2rem;
-  font-family: 'Hind';
   text-transform: uppercase;
   font-weight: bold;
   border-color:black;
 }
-.dia{
-  background-color: #551955;
-  color: white;
-  font-size: 18px;
-  font-weight: bold;
-  font-family: 'Hind';
-  text-transform: uppercase;
-  border-color:black;
-  width: auto;
+
+/* ------------------------- NOSOTROS -------------------------------- */
+.column_escuela {
+  float: left;
+  width: 50%;
+  margin-bottom: 16px;
+  padding: 0 8px;
 }
 
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media (max-width: 700px) {
-  .row,
-  .navbar {
-      flex-direction: column;
-  }
+.column_profe {
+  float: left;
+  width: 30%;
+  margin-bottom: 16px;
+  padding: 0 8px;
 }
 
+.card_profe {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  padding-bottom: 15px;
+}
 
+.container_profe {
+  padding: 0 16px;
+}
 
-/* ------ CONTACTO ---------*/
+.container_profe::after, .row_profe::after, .row_escuela::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: #551955;
+}
+
+.pag_nosotros{
+  margin: 1%;
+}
+
+.pag_nosotros h1{
+  background-color: #FE8335;
+  text-align: center;
+  font-family: 'Staatliches';
+  color:  #551955;
+  margin-left: 0;
+  padding: 10px 0px;
+  font-size: 2rem;
+}
+
+#parrafo_nosotros{
+  text-align: justify;
+  color:  black;
+  font-weight: normal;
+  margin-left: 0;
+  padding: 10px 0px;
+  font-size: 1.2rem;
+}
+
+.container_iframe {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+.ubicacion_mapa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* ---------------------------- EVENTOS -------------------------------*/
+.row_eventos {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column_eventos {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column_eventos img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* ---------------------------- CONTACTO -------------------------------*/
 form{
   width: 80%;
   padding: 2%;
@@ -406,55 +329,39 @@ input:focus{
 }
 
 
-/*----- PAG EVENTOS*/
-.row_eventos {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
+/* ---------- PUNTOS DE CORTE EN LOS FLEX ------- */
 
-/* Create four equal columns that sits next to each other */
-.column_eventos {
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
-}
-
-.column_eventos img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-}
-
-.titulo_evento{
-  margin: 6px;
-  padding: 10px 0px;
-  font-family: 'Staatliches';
-  color:  #551955;
-  background-color: #FE8335;
-  text-align: center;
-}
-
-.titulo_evento + p{
-  margin: 1%;
-  font-family: 'Hind';
-  color:  black;
-  font-weight: bold;
-
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
+/* tablet */
+@media screen and (max-width: 900px) {
   .column_eventos {
     flex: 50%;
     max-width: 50%;
   }
+  .column {
+    width: 50%;
+  }
+  .navbar {
+    flex-direction: column;
+    padding: 1%;
+  }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+/* celular */
+@media screen and (max-width: 550px) {
   .column_eventos {
     flex: 100%;
     max-width: 100%;
   }
+  .column_profe, .column_escuela {
+    width: 100%;
+    display: block;
+  }
+  .row,
+  .navbar {
+      flex-direction: column;
+  }
+  .column {
+    width: 100%;
+  }
 }
+/*default pc navegador */
