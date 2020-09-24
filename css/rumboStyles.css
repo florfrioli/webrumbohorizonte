@@ -144,9 +144,10 @@ body {
 
 
 /* -----------------------Pag Profes */
+
 .column_profe {
   float: left;
-  width: 33.3%;
+  width: 30%;
   margin-bottom: 16px;
   padding: 0 8px;
 }
@@ -158,6 +159,22 @@ body {
   }
 }
 
+.column_escuela {
+  float: left;
+  width: 50%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column_escuela {
+    width: 100%;
+    display: block;
+  }
+}
+
+
+
 .card_profe {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
@@ -166,14 +183,16 @@ body {
   padding: 0 16px;
 }
 
-.container_profe::after, .row_profe::after {
+.container_profe::after, .row_profe::after, .row_escuela::after {
   content: "";
   clear: both;
   display: table;
 }
 
 .title {
-  color: grey;
+  color: #551955;
+  font-family: 'Hind';
+  font-weight: bold;
 }
 
 .button {
@@ -182,6 +201,10 @@ body {
   display: inline-block;
   padding: 8px;
   color: white;
+  font-family: 'Hind';
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1rem;
   background-color: #551955;
   text-align: center;
   cursor: pointer;
@@ -194,6 +217,25 @@ body {
 
 .pag_nosotros{
   margin: 1%;
+}
+/* es igual a titulo talleres*/
+.pag_nosotros h1{
+  background-color: #FE8335;
+  text-align: center;
+  font-family: 'Staatliches';
+  color:  #551955;
+  margin-left: 0;
+  padding: 10px 0px;
+  font-size: 2rem;
+}
+
+#parrafo_nosotros{
+  text-align: justify;
+  font-family: 'Hind', cursive;
+  color:  black;
+  margin-left: 0;
+  padding: 10px 0px;
+  font-size: 1.2rem;
 }
 
 
@@ -278,6 +320,7 @@ body {
 .sideimg {
   width: 100%;
   padding: 5px 10px;
+  border-radius: 50px;
 }
 
 /* TABLAS*/
