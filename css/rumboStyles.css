@@ -365,3 +365,18 @@ input:focus{
   }
 }
 /*default pc navegador */
+
+
+.animacion {
+  background-color: white;
+  animation-name: example;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+}
+@keyframes example {
+  0%   {background-color: red;}
+  25%  {background-color: #FE8335;}
+  50%  {background-color: yellow;}
+  100% {background-color: #551955;}
+}
